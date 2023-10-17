@@ -203,3 +203,8 @@ if (height) {
 } else {
   console.log(`is undefined`)
 }
+
+///////////////////////
+//equality operators == vs ===
+
+const age = 18;
