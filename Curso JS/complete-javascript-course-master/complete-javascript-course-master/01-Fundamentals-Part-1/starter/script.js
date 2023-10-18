@@ -26,7 +26,7 @@ let job1 = "Programmer";
 let job2 = "Teacher";
 
 console.log(myFirstJob);
-*//////////////////////
+*/ /////////////////////
 // Data types
 /*
 let javaScriptIsFun = true;
@@ -47,7 +47,7 @@ year = 2023;
 console.log(typeof (year));
 
 console.log(typeof (null));
-*//////////////////////
+*/ /////////////////////
 //Let, const, var
 /*
 let age = 30;//when you need to mutate a variable use let, and in the empty variables
@@ -61,7 +61,7 @@ job = "teacher";//var is function scope, never use var because is a primitive ty
 
 lastname = "Schmedtmann";//never write variables like this, always declare with const or let
 console.log(lastname);
-*/////////////////////
+*/ ////////////////////
 //Basic operator
 //Math operators
 /*
@@ -93,7 +93,7 @@ console.log(ageIsabella >= 21);
 const isFullAge = ageIsabella >= 18;
 
 console.log(actualYear - 1991 > actualYear - 2003);
-*//////////////////
+*/ /////////////////
 //Operator precedence
 /*
 const actualYear = 2023;
@@ -109,7 +109,7 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageIsabella) / 2
 console.log(ageJonas, ageIsabella, averageAge);
-*//////////////////
+*/ /////////////////
 //String and Template literals
 /*
 const firstName = 'Simon';
@@ -133,7 +133,7 @@ console.log(`String whit
 multiple
 lines`)//with backticks its easier to write multiple line strings
 
-*/////////////////////
+*/ ////////////////////
 //Desicions
 /*
 const age = 18;
@@ -154,7 +154,7 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
-*/////////////////////
+*/ ////////////////////
 //Type conversion and coersion
 /*
 //type conversion
@@ -177,11 +177,11 @@ console.log('20' / '2');
 let n = '1' + 1;// = 11
 n = n -1;// 11 - 1
 console.log (n);
-*/////////////////
+*/ ////////////////
 //Truthy and Falsy values
 
 //5 falsy values: 0, '', undefined, null, NaN
-
+/*
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean('a'));
@@ -203,8 +203,57 @@ if (height) {
 } else {
   console.log(`is undefined`)
 }
-
+*/
 ///////////////////////
 //equality operators == vs ===
+/*
+const age = `18`;
+if (age === 18) console.log(`You just became an adult (strict)`);
+//=== doesnt make coertion but == does, if we compare with === it compare that the values are exactly the same
+if (age == 18) console.log(`You just became an adult (loose)`);
+//when i compare values always use the strict ===
 
-const age = 18;
+const favourite = Number(prompt(`What's your favourite number?`));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23){//23 === 23
+  console.log(`23 is an amazing number`);
+}else if (favourite === 7) {
+  console.log(`7 is also a cool number`);
+}else if (favourite === 9){
+  console.log(`9 is also a cool number`)
+}else{
+  console.log(`number is not 23 or 7`)
+}
+
+if(favourite !== 23) console.log(`why not the 23?`);
+*/ /////////////////////
+//Logical operators
+/*
+const hasDriversLicense = true; //a
+const hasGoodVision = true; //b
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//   console.log(`she is able to drive`);
+// } else {
+//   console.log(`someone else should drive`)
+// }
+
+const isTired = false;//c
+
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log(`Sarah is able to drive`)
+} else {
+  console.log(`someone else should drive`)
+}
+*///////////////
+//

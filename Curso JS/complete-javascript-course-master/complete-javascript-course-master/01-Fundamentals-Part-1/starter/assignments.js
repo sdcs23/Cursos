@@ -55,3 +55,31 @@ if (colombiaPopulation > averagePopulation) {
 //'123' < 57; //false
 //5 + 6 + '4' + 9 - 4 - 2; //1143
 */
+
+////////////////Equiality operators
+/*
+let numNeighbours = Number(prompt(`How many neighbour does your country have?`));
+
+if (numNeighbours === 1) {
+  console.log(`only 1 neighbour`);
+} else if (numNeighbours >= 1) {
+  console.log(`More than 1 border`);
+} else {
+  console.log(`No borders`);
+}
+*/
+
+//////////////////////////
+//Logical operators
+/*
+let colombiaPopulation = 50000000;
+const isIsland = false;
+const country = "Colombia";
+let lenguage = "Spanish";
+
+if(lenguage === "Spanish" && colombiaPopulation <= 50000000 && isIsland === false){
+  console.log(`Colombia is a good choice`)
+}else{
+  console.log(`Colombia does not meet your criteria :(`)
+}
+*/
