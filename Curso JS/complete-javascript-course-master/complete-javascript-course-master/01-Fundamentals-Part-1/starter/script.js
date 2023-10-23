@@ -209,11 +209,11 @@ if (height) {
 /*
 const age = `18`;
 if (age === 18) console.log(`You just became an adult (strict)`);
-//=== doesnt make coertion but == does, if we compare with === it compare that the values are exactly the same
+//=== doesn't make coercion but == does, if we compare with === it compare that the values are exactly the same
 if (age == 18) console.log(`You just became an adult (loose)`);
 //when i compare values always use the strict ===
 
-const favourite = Number(prompt(`What's your favourite number?`));
+const favorite = Number(prompt(`What's your favorite number?`));
 console.log(favourite);
 console.log(typeof favourite);
 
@@ -256,4 +256,85 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
   console.log(`someone else should drive`)
 }
 *///////////////
+//The switch statement
+/*
+const day = 'tuesday';
+
+switch (day) {
+  case 'monday': //day === 'monday'
+    console.log(`Plan course structure`);
+    console.log(`Go to coding meetup`);
+    break;
+  case 'tuesday':
+    console.log(`Prepare theory videos`);
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log(`Write code examples`);
+  case 'friday':
+    console.log(`Record videos`);
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log(`Enjoy the weekend`);
+    break;
+  default:
+    console.log(`Not a valid day`);
+}
+
+if (day === 'monday'){
+  console.log(`Plan course structure`);
+  console.log(`Go to coding meetup`);
+}else if(day === 'tuesday'){
+  console.log(`Prepare theory videos`);
+}else if(day === 'wednesday' || day === 'thursday'){
+  console.log(`Write code examples`);
+}else if(day === 'friday'){
+  console.log(`Record videos`);
+}else if(day === 'saturday' || day === 'sunday'){
+  console.log(`Enjoy the weekend`);
+}else{
+  console.log(`Not a valid day`);
+}
+*/////////////////////
+// Statements and expressions
+/*
+//3 + 4 //expression
+//1991 //expression
+//true && false && !false //expression
+
+if (23 > 10) {
+  const str = `23 is bigger`;
+}//statement or declaration
+// expressions produce values and the statements are like full sentences, they are like actions
+
+const me = `Simon`;
+console.log(`I'm ${2023 - 2003} years old ${me}`);//expression
+*/////////////////////
+//The conditional (ternary) operator
+/*
+const age = 20;
+//age >= 18 ? console.log(`I like to drink wine 🍷`) : console.log(`I like to drink water 💧`);//thats like an if but in one line
+
+const drink = age >= 18 ? `wine 🍷` : `water 💧`;
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = `wine 🍷`;
+}else{
+  drink2 = `water 💧`;
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? `wine 🍷` : `water 💧`}`)
+
+//Coding challenge #4
+const bill = 275;
+
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20 ;
+
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+*/////////////////////
 //
